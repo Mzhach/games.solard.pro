@@ -1,0 +1,21 @@
+{
+  "name": "games.solard.pro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./build/index.js",
+    "watch": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mzhach/games.solard.pro.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mzhach/games.solard.pro/issues"
+  },
+  "homepage": "https://github.com/Mzhach/games.solard.pro#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
