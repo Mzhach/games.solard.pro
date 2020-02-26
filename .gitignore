@@ -1,5 +1,6 @@
 # Compiled binary addons
 build/
-
 # Dependency directories
 node_modules/
+# Enviroment file
+.env

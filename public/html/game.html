@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Крестики-нолики</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+
+        <style>
+            .game-cell {
+                height: 100px;
+                width: 100px !important;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/" class="btn btn-dark">Назад</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Текущий игрок: <span id="current-player" title="0 - X; 1 - O"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Результат игры: <span id="game-result" title="0 - INPROGRESS; 1 - TIC; 2 - TAC; 3 - DRAW"></span>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="0" data-y="0"></button>
+                </div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="0" data-y="1"></button>
+                </div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="0" data-y="2"></button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="1" data-y="0"></button>
+                </div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="1" data-y="1"></button>
+                </div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="1" data-y="2"></button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="2" data-y="0"></button>
+                </div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="2" data-y="1"></button>
+                </div>
+                <div class="col-md-2 py-md-3">
+                    <button class="game-cell btn btn-dark" data-x="2" data-y="2"></button>
+                </div>
+                <div class="col-md-3 "></div>
+            </div>
+        </div>
+
+        <script src="/client/game.bundle.js"></script>
+    </body>
+</html>
